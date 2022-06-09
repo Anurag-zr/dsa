@@ -20,10 +20,10 @@ void print(int i, vector<int> &ds, int s, int arr[], int n, int sum){
 }
 
 int main(){
-    int arr[] = {1, 2, 1};
-    int n = 3;
+    int arr[] = {1, 2, 1,1,1,1,2};
+    int n = 7;
     vector<int> ds;
-    int sum = 3;
+    int sum = 2;
     int s = 0;
 
     print(0, ds, s, arr, n, sum);
