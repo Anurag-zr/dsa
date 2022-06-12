@@ -1,7 +1,11 @@
 /*
 
+partition string s such that every substr is palindrome
+
+return all possible solution;
+
 str ="aabb"
- 
+
  possible palindromic partitioning
  [{a,a,b,b},
   {a,a,bb},
@@ -10,11 +14,12 @@ str ="aabb"
 
   */
 
- #include<bits/stdc++.h>
- using namespace std;
- bool isPalindrome(string, int, int);
+#include <bits/stdc++.h>
+using namespace std;
+bool isPalindrome(string, int, int);
 
- void findPalindromicPartition(int ind,string str,vector<string> &ds,vector<vector<string> > &ans){
+void findPalindromicPartition(int ind, string str, vector<string> &ds, vector<vector<string>> &ans)
+{
     if(ind == str.size()){
         ans.push_back(ds);
         return;
@@ -43,7 +48,7 @@ str ="aabb"
 
  int main(){
 
-   string str = "aabb";
+   string str = "aacbb";
     vector<vector<string>> ans;
     vector<string> ds;
 
