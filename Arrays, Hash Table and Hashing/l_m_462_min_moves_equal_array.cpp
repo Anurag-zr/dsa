@@ -36,6 +36,33 @@ int minMoves(vector<int> &nums)
     return moves;
     }
 
+        //By sorting and keeping the value of min element stored, O(NlogN)
+    //By traversing for i>0 increment all n-1 element exept cur element upto min, update cur
+    //summition of increments in first upto cur;
+    //update min
+    // int minMoves(vector<int>& nums) {
+    //     int n = nums.size();
+    //     sort(nums.begin(),nums.end());
+    //     int totalmoves = 0;
+    //     int first = nums[0],cur;
+    //     for(int i = 1;i<n;i++){
+    //         cur = nums[i] + totalmoves;
+    //         totalmoves += cur - first;
+    //         first = cur;
+    //     }
+    //     return totalmoves;
+    // }
+
+    // //Optimized approch, using summition O(N)
+    // int minMoves(vector<int>& nums) {
+    //     int sum=0,num_min=INT_MAX;
+    //     for(int a:nums){
+    //         sum+=a;
+    //         num_min=min(num_min,a);
+    //     }
+    //     return sum-(num_min*nums.size());
+    // }
+
 
     int main(){
         vector<int> nums ={-2,-1,0,1,2,3};
