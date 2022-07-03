@@ -9,7 +9,7 @@ int longestKSubstr(string s, int k) {
     unordered_map<char,int> umap;
     
     for(int j=0;j<s.length();j++){
-        cout << uniquechar << endl;
+        // cout << uniquechar << endl;
         if(umap.find(s[j])==umap.end()){
             uniquechar++;
             umap[s[j]]++;
