@@ -50,6 +50,13 @@ bool tabulationSol(int n,int k,vector<int> arr){
         }
     }
 
+    for(auto it: dp){
+        for(auto it1: it){
+            cout << it1 << " ";
+        }
+        cout << endl;
+    }
+
     return dp[n - 1][k];
 }
 
@@ -82,13 +89,13 @@ bool spaceOptimizationSol(int n,int k,vector<int> arr){
 
 
 int main(){
-    vector<int> arr{3, 1, 2, 4, 5, 9};
+    vector<int> arr{17, 1, 2, 4, 5, 9};
     int k = 15;
     int n = arr.size();
 
     // cout << subsetSumToK(n, k, arr) << endl;
 
-    // cout << tabulationSol(n, k, arr) << endl;
+    cout << tabulationSol(n, k, arr) << endl;
 
-    cout<< spaceOptimizationSol(n,k,arr) << endl;
+    // cout<< spaceOptimizationSol(n,k,arr) << endl;
 }
