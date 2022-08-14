@@ -26,6 +26,7 @@ using namespace std;
                         word[j]= (char) k;
                         if(dict.find(word) != dict.end()  && !visited[word]){
                             q.push(word);
+                            visited[word]=true;
                         }
                     }
                     
