@@ -2,6 +2,7 @@
 using namespace std;
 
 
+
 void create(int n,int m,vector<int> adjList[]){
     for (int i = 0; i < m;i++){
         int u, v;
@@ -9,6 +10,7 @@ void create(int n,int m,vector<int> adjList[]){
         // directed graph
         adjList[u].push_back(v);
     }
+
 }
 
     bool bfs(int src,vector<int> adj[],vector<int> &vis){
