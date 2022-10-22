@@ -75,7 +75,7 @@ using namespace std;
 
 
     int main(){
-        string s = "ADOBECODEBANC";
-        string t = "ABC";
+        string s = "ADOBECODEBANCCABCC";
+        string t = "ABCC";
         cout << minWindow(s, t) << endl;
     }
